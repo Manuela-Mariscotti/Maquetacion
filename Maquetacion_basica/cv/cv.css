@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
+    border: 0.3px solid grey;
 }
 html{
     display: flex;
@@ -17,10 +18,7 @@ html{
     flex-direction: column;
 }
 
-
 /*************HEADER*************/
-
-
 
 .body__header{
     width: 100%;
@@ -67,6 +65,7 @@ html{
     padding: 3px;
     border: 2px solid  black;
     text-align: center;
+       box-shadow: 5px 5px 2px solid rgb(0, 0, 0,1) ;
 }
 
 .titulo__p{
