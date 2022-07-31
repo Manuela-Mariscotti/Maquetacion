@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid rgb(110, 109, 109); */
+    margin: 0;
+}
+body{
+    width: 100%;
+    font-family: 'PT Sans Caption', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenedor{
+    border: 0px;
+    width: 1024px;
+
+}
+/******************  HEADER  *****************/
+.header{
+    width: 1024px;
+    height: 100px;
+
+    padding-left: 30px;
+    padding-right: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.header__logo{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header__space{
+    width: 61%;
+}
+.header__a{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+header a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+/********** SECTION iMAGEN BACKGROUND ***********/
+.section__imgBackground{
+    width: 100%;
+    height: 483px;
+    background-image: url("./img_background.png");
+}
+
+/**************  SECTION AZUL  *****************/
+.section__azul{
+    width: 100%;
+    height: 800px;
+    padding-left: 30px;
+    background-color: rgb(1, 1, 252);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.azul__miscelanea{
+    width: 536px;
+    height: 312px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+.azul__img{
+    width: 70%;
+    height: 70%;
+}
+.azul__div{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.azul__p{
+    color:white;
+    font-weight: 900;
+    font-size: 4em;
+}
+.azul__p span{
+    color:#11F294;
+}
+.azulp1{
+    font-size: 2em;
+}
+.azulh1{
+    font-size: 1.8em;
+    color:white;
+    font-weight: 900;
+}
+/*************  SECTION BLACK *****************/
+.section__black{
+    width: 100%;
+    height: 900px;
+    background-color: black;
+    color: white;
+    padding: 30px 30px 65px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.black__text{
+    width: 70%;
+    font-size: 1.6em;
+}
+.black__h2, .black__h3{
+    margin-bottom: 30px;
+}
+.black__p{
+    font-size: 1em;
+}
+.black__img{
+
+    height: 728px;
+}
+
+.black__img img{
+    height: 100%;
+}
+/*************  SECTION WHITE  *****************/
+.section_white{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.white__p{
+    height: 130px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.white__img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.white__img img{
+    width: 20%;
+}
+/*************  SECTION GREEN *****************/
+.section__green{
+    width: 100%;
+    height: 400px;
+    background-color: #11F294;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.green__a{
+    text-decoration: none;
+    color:white;
+    
+    font-weight: bolder;
+}
+.green__p2{
+    font-size: 2.05em;
+    color: black;
+}
+.green__p2:hover{
+    font-size: 2.1em;
+    color: rgb(1, 1, 252);
+}
+.green__p2:active{
+    color: white;
+}
+
+.green__p1{
+    color:white;
+}
+
+/*************  FOOTER adress *****************/
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(1, 1, 252);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+.footer__address{
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.address__icon{
+    width: 40px;
+    height: 55px;
+}
+.address__img{
+    width: 100;
+    height: 40px;
+    opacity: 0.5;
+}
+
+/*************  FOOTER rrss *****************/
+
+.footer__rrss{
+    width: 400px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.rrss__a{
+    width: 40px;
+    height: 40px;
+}
+.rrss__img{
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+}
+

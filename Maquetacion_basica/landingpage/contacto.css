@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    width: 100%;
+    font-family: 'PT Sans Caption', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenedor{
+    border: 0px;
+    width: 1024px;
+}
+
+/******************  HEADER  *****************/
+
+.header{
+    width: 1024px;
+    height: 100px;
+    position: fixed;
+    padding-left: 30px;
+    padding-right: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.header__logo{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header__space{
+    width: 61%;
+}
+.header__a{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+header a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/***************  SECTION PRINCIPAL  **************/
+
+.section__principal{
+    width: 100%;
+    height: 1300px;
+    background-color: rgb(2, 85, 252);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.principal__h1{
+    width: 800px;
+    height: 400px;
+    color: white;
+    font-size: 5em;
+}
+.principal__p{
+    width: 800px;
+    height: 180px;
+    color: white;
+    font-size: 2em;
+}
+
+/***********  SECTION PRINCIPAL FORMULARIO**********/
+
+.form__div{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+input{
+    width: 800px;
+    height: 50px;
+    font-size: 1.5em;
+    color: black;
+    background-color:white;
+    border-style: none;
+    border-bottom: 1px solid black;
+    font-family: inherit;
+}
+.input__textarea{
+    height: 300px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    border-style: none;
+    background-color: #11F294 ;
+    font-weight: bolder;
+    color: white;
+    font-family: inherit;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: #07a563;
+}
+button:active{
+    color: black;
+    background-color: #035533;
+}
+
+/*************  FOOTER ADDRESS *****************/
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(1, 1, 252);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+.footer__address{
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.address__icon{
+    width: 40px;
+    height: 55px;
+}
+.address__img{
+    width: 100;
+    height: 40px;
+    opacity: 0.5;
+}
+
+/*************  FOOTER RRSS *****************/
+
+.footer__rrss{
+    width: 400px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.rrss__a{
+    width: 40px;
+    height: 40px;
+}
+.rrss__img{
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+}
