@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    color: aliceblue;
+    text-align: center;
+    margin: 0px;
+}
+.abuela{
+    /* width: 1000px; */
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.madre{
+    width: 50vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr ;
+    grid-template-rows: 2fr 1fr;
+}
+.hija{
+    background-color: greenyellow;
+}
+.hijo{
+    background-color: rgb(0, 0, 0);
+}

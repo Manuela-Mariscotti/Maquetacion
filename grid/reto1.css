@@ -1,0 +1,27 @@
+*{
+    color: aliceblue;
+    text-align: center
+}
+.madre{
+    display: grid;
+    grid-template-columns: 300px 150px 300px;
+    grid-template-rows: 200px 200px 200px;
+}
+.hija1{
+    background-color: greenyellow;
+}
+.hija2{
+    background-color: rgb(255, 182, 47);
+}
+.hija3{
+    background-color: rgb(214, 99, 22);
+}
+.hija4{
+    background-color: red;
+}
+.hija5{
+    background-color: rgb(76, 0, 255);
+}
+.hija6{
+    background-color: rgb(255, 238, 0);
+}
