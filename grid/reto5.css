@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.03em;
+}
+
+.body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "main";
+}
+/*************************************/
+/*************************************/
+.header{
+    grid-area: header;
+    background-color: blue;
+    border: 1px inset black;
+    border-bottom: 0px;
+    text-align: center;
+    color: beige;
+    display: grid;
+    grid-template-columns: [x0]1fr[x1];
+    grid-template-rows: [y0]0.5fr[y1]1fr[y2]0.5fr[y3];
+}
+.header p{
+    grid-column: x0/x1;
+    grid-row: y1/y2;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 3em;
+}
+
+/*************************************/
+/*************************************/
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "juego juego juego marcador marcador"
+    "juego juego juego marcador marcador"
+    "juego juego juego marcador marcador";
+}
+
+/*************************************/
+/*************************************/
+.main__juego{
+    grid-area: juego;
+    background-color: rgb(255, 0, 0);
+    border: 1px inset black;
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 3fr [x2] 1fr [x3];
+    grid-template-rows: [y0]1fr[y1]3fr[y2]1fr[y3];
+}
+.juego1{
+    grid-column: x1/x2;
+    grid-row: y1/y2;
+    /* background-color: beige; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    color:rgb(189, 7, 7);
+}
+.zonaA, .zonaB, .zonaC {
+    border-bottom: 5px inset black;
+}
+.zonaG, .zonaH, .zonaI{
+    border-top: 5px inset black;
+}
+.zonaB,.zonaE,.zonaH{
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+}
+.zonas:hover{
+    background-color: rgb(189, 7, 7);;
+}
+
+/*************************************/
+/*************************************/
+.main__marcador{
+    grid-area: marcador;
+    background-color: orange;
+    border: 1px inset black;
+    border-left: 0px;
+    display: grid;
+    grid-template-columns: [x0]1fr[x1]2fr[x2]1fr[x3];
+    grid-template-rows: [y0]1fr[y1]1fr[y2]1fr[y3]1fr[y4]1fr[y5]1fr[y6]1fr[y7]1fr[y8]1fr[y9];
+    text-align: center;
+
+}
+.marcador__partidas{
+    
+    grid-column: x1/x2;
+    grid-row: y1/y2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.partida__numero{
+    border: 1px solid black;
+    border-right: 1px dotted black;
+    display: grid;
+    grid-template-columns: [x0]1fr[x1] ;
+    grid-template-rows: [y0]1fr[y1]2fr[y2]1fr[y3];
+}
+.partida__numero p{
+    grid-column: x0/x1;
+    grid-row: y1/y2;
+}
+.partida__cantidad{
+    border: 1px solid black;
+    border-left: 0px none;
+    display: grid;
+    grid-template-columns: [x0]1fr[x1] ;
+    grid-template-rows: [y0]1fr[y1]2fr[y2]1fr[y3];
+}
+.partida__cantidad p{
+    grid-column: x0/x1;
+    grid-row: y1/y2;
+}
+
+/*************************************/
+/*************************************/
+.marcador__victorias{
+    grid-column: x1/x2;
+    grid-row: y2/y4;
+    display: grid;
+    grid-template-columns: [x0]1fr[x1];
+    grid-template-rows: [y0]2fr[y1]1fr[y2]3fr[y3];
+
+}
+.victorias__victorias{
+    grid-column: x0/x1;
+    grid-row: y0/y1;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: [x0]1fr[x1] ;
+    grid-template-rows: [y0]1fr[y1]2fr[y2]1fr[y3];
+}
+.victorias__victorias p{
+    grid-column: x0/x1;
+    grid-row: y1/y2;
+}
+.victorias__jugadores{
+    grid-column: x0/x1;
+    grid-row: y1/y2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.victorias__juador1{
+    border: 1px solid black;
+}
+.victorias__juador2{
+    border: 1px solid black;
+    
+}
+.victorias__cantidades{
+    grid-column: x0/x1;
+    grid-row: y2/y3;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.cantidades__jugador1{
+    border-right: 1px dotted black;
+    display: grid;
+    grid-template-columns: [x0]1fr[x1] ;
+    grid-template-rows: [y0]1fr[y1]2fr[y2]1fr[y3];
+}
+.cantidades__jugador1 p{
+    grid-column: x0/x1;
+    grid-row: y1/y2;
+}
+.cantidades__jugador2{
+    display: grid;
+    grid-template-columns: [x0]1fr[x1] ;
+    grid-template-rows: [y0]1fr[y1]1fr[y2]1fr[y3];
+}
+.cantidades__jugador2 p{
+    grid-column: x0/x1;
+    grid-row: y1/y2;
+}
+/*************************************/
+/*************************************/
+.boton__nuevaPartida{
+    grid-column: x1/x2;
+    grid-row: y5/y6;
+    background-color: blueviolet;
+    color:beige;
+}
+.boton__reiniciarJuego{
+    grid-column: x1/x2;
+    grid-row: y7/y8;
+    background-color: blueviolet;
+    color:beige;
+}
+.boton__nuevaPartida:active, .boton__reiniciarJuego:active{
+    color:black;
+    background-color: rgb(105, 25, 180);
+    transform:scale(0.95);
+    border-radius: 3px;
+}
+.boton__nuevaPartida:hover, .boton__reiniciarJuego:hover{
+    color:black;
+}
