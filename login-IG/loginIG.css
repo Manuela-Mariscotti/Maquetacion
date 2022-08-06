@@ -1,0 +1,273 @@
+:root{/*************colores***************/
+    --backgroundColorBody: #FAFAFA;
+    --backgroundColorMain: #FFFFFE;
+    --botonColor: #0095F6;
+    --facebookColor: #385185;
+    --textColor : black;
+    --linkColor: #8E8E8E;
+    --borderColor: #cccccc;
+}
+*{/*************limpiador***************/
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+a{/*************estilos base para links***************/
+    text-decoration: none;
+    color:var(--linkColor)
+}
+
+/***************INICIO DE DESARROLLO***************/
+
+.body__contenedor{/****contenedor gral. de toda la pag.*****/
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--backgroundColorBody);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/******************LOGIN*******************/
+
+.contenedor__estructural{/*********** LOGIN: contenedor gral ************/
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.login__wrap{/********LOGIN: contenedor sin imagen*******/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+}
+.contenedor__imagen{/********* LOGIN:imagen grande***********/
+    width: fit-content;
+    height: fit-content;
+}
+.contenedor__login{/********LOGIN:para centrar logo,inputs,olvido contraseña*****************/
+    width: 400px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.4px solid var(--borderColor);
+    border-radius: 2px;
+    background-color: var(--backgroundColorMain);
+    gap: 20px;
+}
+.login__login{/*********LOGIN: logo,inputs,olvido contraseña **********/
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.login__logo{/***************LOGIN: logo Instagram solo****************/
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.login__form{/********LOGIN:formulario************/
+    width: 340px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+.form__usuario, 
+.form__contrasenia, 
+.form__boton{/******LOGIN:form inputs y button*********/
+    border-radius: 4px;
+}
+.form__usuario, 
+.form__contrasenia{/*********LOGIN:estilos input************/
+    height: 45px;
+    background-color: var(--backgroundColorBody);
+    font-size: 0.95em;
+    padding-left: 5px;
+    border: 0.5px solid var(--borderColor);
+}
+.form__boton{/******LOGIN:estilos boton*********/
+    height: 35px;
+    color: var(--backgroundColorMain);
+    font-weight: 600;
+    background-color: var(--botonColor);
+    border: 0px none;
+}
+.login__article{/*******LOGIN:recupero contraseña***********/
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.login__article a{/*******LOGIN:tamaño links***********/
+    font-size: 0.9em;
+}
+.article__iniciarConFb{/*******LOGIN:iniciar con Facebook********/
+    height: 30px;
+    color: var(--facebookColor);
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.article__iniciarConFb img{/*******LOGIN:logo Facebook**********/
+    height: 25px;
+    width: 25px;
+}
+.article__olvidoContrasenia{/*******LOGIN:color olvido contraseña**********/
+    color: black;
+}
+.login__aside{/*******LOGIN:registrarse nuevo**********/
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.4px solid var(--borderColor);
+    border-radius: 2px;
+    background-color: var(--backgroundColorMain);
+}
+.login__registrarseNuevo a{/*******LOGIN:registrarse nuevo links**********/
+    color:var(--botonColor);
+    font-weight: 600;
+}
+.login__registrarseNuevo p,
+.login__registrarseNuevo a{
+    font-size: 0.95em;
+}
+.login__descargar{/********LOGIN:descargar app***********/
+    width: 100%;
+    height: 80px;
+    background-color: var(--backgroundColorBody);
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.login__descargar__botones{/********LOGIN:descargar botones***********/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/******************FOOTER*******************/
+
+.footer__contenedor{/***FOOTER: contenedor gral*****/
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+.footer__div{/*****FOOTER: div grupos links*****/
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.footer__div a{/*****FOOTER: div individual links*****/
+    font-size: 0.85em;
+}
+.footer__intereses, 
+.footer__data{/*****FOOTER: centrar links*****/
+    align-content: center;
+}
+.footer__div a{/*********FOOTER: links************/
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*////////// MEDIAQUERY max-width: 1024px///////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+
+@media screen and (max-width:1024px) {
+    /********* LOGIN:imagen grande***********/
+    .contenedor__imagen{
+        display: none;
+    }
+}
+
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*////////// MEDIAQUERY max-width: 560px////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+
+@media screen and (max-width:476px){
+    .body__contenedor{/****contenedor gral. de toda la pag.*****/
+        justify-content: space-between;
+        align-content: space-around;
+    }
+    /******************LOGIN*******************/
+    .contenedor__estructural{/*********** LOGIN: contenedor gral ************/
+        height: 70vh;
+    }
+    .login__wrap{/********LOGIN: contenedor sin imagen*******/
+        height: 100%;
+    }
+    .contenedor__login{/********LOGIN:para centrar logo,inputs,olvido contraseña*****************/
+        width: 100%;
+        border: 0px none ;
+        border-radius: 0px;
+        background-color: var(--backgroundColorBody);
+    }
+    .login__login{/*********LOGIN: logo,inputs,olvido contraseña **********/
+        height: 450px;
+    }
+    .login__article{/*******LOGIN:recupero contraseña***********/
+        width: 100%;
+    }
+    .login__aside{/*******LOGIN:registrarse nuevo**********/
+        width: 100%;
+        height: 90px;
+        border: 0px none var(--backgroundColorBody);
+        background-color: var(--backgroundColorBody);
+    }
+    .login__descargar{/********LOGIN:descargar app***********/
+        height: 90px;
+    }
+    /******************FOOTER*******************/
+    .footer__contenedor{/***FOOTER: contenedor gral*****/
+        height: 175px;
+    }
+    .footer__div{/*****FOOTER: div grupos links*****/
+        height: 75px;
+    }
+}
