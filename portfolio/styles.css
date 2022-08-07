@@ -12,18 +12,23 @@
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
     color:var(--primaryColor);
-/******************************/
-    border: 0.5px solid rgb(247, 86, 86);
-/******************************/
+}
+body{
+    min-width: 940px;
+    min-height: 640px;
+    background-color: var(--backGroundColor);
 }
 a{
     text-decoration: none;
     color: black;
 }
-body{
-    min-width: 1024px;
-    min-height: 640px;
-    background-color: var(--backGroundColor);
+.link_text:hover{
+    background-color: var(--accentColor);
+    text-decoration: underline;
+
+}
+.link_text:active{
+    color: var(--accentColor2);
 }
 
 /*----------- HEADER -----------*/
@@ -64,10 +69,9 @@ body{
 footer{
     width: 100%;
     height: 17vh;
-
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     background-color: var(--backGroundColor);
     align-items: center;
 }
@@ -126,17 +130,27 @@ footer p{
    background-color: var(--primaryColor);
    color: var(--secondaryColor);
 }
-.footer__intro{
-    height: 200px;
-    align-items: flex-end;
+.separador{
+    width: 100%;
+    height: 300px;
 }
+.link__trabajemos{
+    font-weight: 500;
+    color: var(--accentColor);
+    background-color: var(--primaryColor);
+}
+.link__trabajemos:hover{
+    text-decoration: underline;
+}
+.link__trabajemos:active{
+    color: var(--accentColor2);
+}
+
 /************************************************************/
 /********************** PAG: ABOUT **************************/
 /************************************************************/
 
-
 .section__about_wrapper{
-    /* background-color: blue; */
     width: 100%;
     height: 870px;
     display: flex;
@@ -145,24 +159,26 @@ footer p{
     gap: 10px;
 }
 .section__about_interno{
-    /* background-color: yellow; */
     width: 450px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-
 }
 .section__about_p{
     width: 100%;
+    font-size: 16px;
+}
+.section__about_p a{
+    font-size: 16px;
+    font-weight: 600;
 }
 .section__about_wrapper img{
     width: 150px;
     align-self: flex-start;
     border: 2px solid var(--primaryColor);
     box-shadow: 24px 24px var(--accentColor2);
-
 }
 
 /*************************************************************/
@@ -170,7 +186,6 @@ footer p{
 /*************************************************************/
 
 .section__skills_wrapper{
-    /* background-color: rgb(50, 50, 240); */
     width: 100%;
     height: 700px;
     display: flex;
@@ -180,7 +195,6 @@ footer p{
     gap: 10px;
 }
 .section__skills_interno{
-    /* background-color: yellow; */
     width: 500px;
     height: auto;
     display: flex;
@@ -202,7 +216,6 @@ footer p{
     height: 35%;
 }
 .skill__logo_wrapper{
-    /* background-color: orange; */
     width: 80%;
     height: 100%;
     display: flex;
@@ -214,7 +227,6 @@ footer p{
 .skill__logo_wrapper img{
     width: 40px;
     height: 40px;
-
 }
 
 /************************************************************/
@@ -234,7 +246,6 @@ footer p{
     position: inherit;
 }
 .section__work_wrapper{
-    background-color: blue;
     width: 100%;
     height: auto;
     display: flex;
@@ -245,17 +256,15 @@ footer p{
     gap:20px;
 }
 .section__work_interno{
-    background-color: yellow;
     width: 600px;
     height: 2000px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    gap: 20px;
+    gap: 40px;
 }
 .work__box{
-    /* background-color: green; */
     width: 100%;
     height: 600px;
     border-bottom: 0px none;
@@ -266,26 +275,20 @@ footer p{
     flex-wrap: wrap;
 }
 .work__name{
-    background-color: purple;
     width: 100%;
     border-bottom: 2px solid var(--primaryColor);
 
 }
 .work__img{
-    background-color: #A39BA8;
     width: 300px;
-    
-
 }
 .work__img img{
     width: 100%;
     border-right: 2px solid var(--primaryColor);
     border-bottom: 2px solid var(--primaryColor);
     box-shadow: 24px 24px var(--accentColor);
-
 }
 .work__p{
-    /* background-color: aqua; */
     font-weight: 300;
 }
 .work__stack{
@@ -304,16 +307,47 @@ footer p{
     text-align: right;
     text-align: left;
     font-weight: 500;
-   align-self: inherit;
-   color: var(--primaryColor)
-
-   
-}
-.work__box a:hover{
-    background-color: var(--accentColor);
-}
-.work__box a:active{
-    color: var(--accentColor2);
+    align-self: inherit;
+    color: var(--primaryColor)
 }
 
+/************************************************************/
+/********************** PAG: CONTACTO************************/
+/************************************************************/
 
+.section__contacto_wrapper{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.section__contacto_interno{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contacto__formulario form{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    gap: 20px;
+}
+input{
+    height: 40px;
+    border: 0px none;
+    border-bottom: 1px solid var(--secondaryColor);
+}
+#textarea{
+    height:200px;
+}
+button{
+    height: 40px;
+    border: 0px none;
+    border-radius: 2px;
+    background-color: var(--primaryColor);
+    color: var(--accentColor);
+}
