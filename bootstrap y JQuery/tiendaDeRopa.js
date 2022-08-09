@@ -1,3 +1,4 @@
-let precio = document.getElementsByClassName("card-title");
-
-console.log(precio[0]);
+function add(precio,nombre){
+    console.log(precio);
+    console.log(nombre);
+}
